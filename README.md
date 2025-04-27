@@ -22,7 +22,7 @@ Follow these steps to set up and run the application locally:
 ```bash
 git clone https://github.com/your-username/hiring-assistant.git
 cd hiring-assistant
-
+```
 ### 🖥️ **Set up a Virtual Environment (optional but recommended)**
 
 ```bash
