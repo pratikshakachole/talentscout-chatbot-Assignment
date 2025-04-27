@@ -26,6 +26,7 @@ cd hiring-assistant
 ### 🖥️ **Set up a Virtual Environment (optional but recommended)**
 
 ```bash
+
 python -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate     # For Windows
