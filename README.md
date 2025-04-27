@@ -1,6 +1,6 @@
 ## 🧑‍💻 **TalentScout - Hiring Assistant**
 
-## 🚀 ** Project Overview **
+## 🚀 **Project Overview**
 
 TalentScout Hiring Assistant is an intelligent chatbot built with Streamlit and powered by a Hugging Face LLM (Mixtral-8x7B-Instruct) through API integration.
 It assists in:
@@ -30,25 +30,25 @@ python -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate     # For Windows
 ```
-### 📦 ** Install Required Packages **
+### 📦 **Install Required Packages**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 🔐 ** Create a .env file **
+### 🔐 **Create a .env file**
 Add your Hugging Face API token:
 
 ```bash
 HUGGINGFACE_API_TOKEN=your_huggingface_api_token_here
 ```
 
-### 🚀 ** Run the Streamlit Application **
+### 🚀 **Run the Streamlit Application**
 ```bash
 streamlit run app.py
 ```
 
-## 🎯 **  Usage Guide **
+## 🎯 **Usage Guide**
 Start the app using streamlit run app.py.
 
 Enter your details step-by-step as the chatbot prompts:
@@ -73,7 +73,7 @@ All candidate data will be saved locally in a file named candidate_data.txt.
 
 Click "🔄 Restart Conversation" to begin a new session if needed.
 
-## 🛠️ ** Technical Details **
+## 🛠️ **Technical Details**
 Frontend Framework: Streamlit
 
 LLM Backend: Hugging Face Inference API (mistralai/Mixtral-8x7B-Instruct-v0.1)
@@ -86,12 +86,12 @@ Session Management: Streamlit session_state
 
 Data Storage: Local file (candidate_data.txt)
 
-## 🧠 ** Prompt Design **
+## 🧠 **Prompt Design**
 
-###  ** Information Gathering **
+###  **Information Gathering**
 The chatbot uses a simple, friendly series of chat-style prompts to collect necessary candidate information without overwhelming them.
 
-###  ** Technical Question Generation **
+###  **Technical Question Generation**
 A carefully crafted dynamic prompt is sent to the Hugging Face model:
 ```text
 Generate 5 technical interview questions for a candidate skilled in {tech_stack}.
@@ -104,7 +104,7 @@ This design ensures:
 
 3. LLM temperature is controlled at 0.7 for balanced creativity and relevance.
 
-## 🚧 ** Challenges & Solutions **
+## 🚧 **Challenges & Solutions**
 
 | **Challenge** | **Solution** |
 |:--------------|:-------------|
@@ -113,5 +113,5 @@ This design ensures:
 | Managing API token security. | Implemented `.env` file loading with `python-dotenv` to avoid exposing sensitive credentials. |
 | Preventing session data from leaking between candidates. | Provided a clear "Restart Conversation" button to reset `session_state`. |
 
-## 📢  **  Final Note **
+## 📢  **Final Note**
 "TalentScout - Hiring Assistant" provides a strong foundation for building more sophisticated HR automation tools by adding resume parsing, ATS integration, or advanced analytics later.
